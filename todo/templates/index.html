@@ -31,9 +31,9 @@
     {% for task in tasks %}
     <div>
         {% if task.complete == True %}
-        <span class="badge text-bg-secondary"><strike> {{task}} </strike></span> <br>
+      <span class="badge text-bg-secondary"><strike><h5> {{task}} </h5> </strike></span> <br>
         {% else %}
-        <span class="badge text-bg-warning">{{task}}</span> <br>
+      <span class="badge text-bg-warning"><h5>{{task}}</h5></span> <br>
         {% endif %}
         <br>
         <button type="button" class="btn btn-success"><a href="{% url 'update' task.id %}" text-decoration: none>Update</a></button>
